@@ -62,11 +62,15 @@
 به تماس و EPaysa را  پیدا خواهند کرد.
 </h4>
                      </div>
+                      <form method="POST" action="preregister.php" name="preregister" id="preregister" >
                      <div class="demo">
-                        <input type="tel" id="phone" class="form-control">
+                        <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
+                        <input type="hidden" id="phone2" name="phone-full" value="">
+                        <input type="hidden" name='lang' value='da'>
                         <button id="submit" type="submit" class="country_verify">ثبت نام</button>
                         <p class="terms">T & C *: ابتدا برای نخستین بار خدمت می کنیم</p>
                      </div>
+                  </form>
                      <div id="result"></div>
                   </div>
                </div>
@@ -197,6 +201,7 @@
                         <div class="modal-dialog">
                         <!-- Modal content-->
                         <div class="modal-content">
+                        <form id="myform" action="partner.php" name="myform" method="POST">
                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title text-center partner">عضو شدن با تاماس </h4>
@@ -205,30 +210,32 @@
                         <div class="modal-body">
                         <div class="form-group col-md-12">
                         <label for="Phone">نام مالک تشبث*</label>
-                        <input type="text" class="form-control" name="" id="Name" placeholder="نام مالک تشبث">
+
+                        <input type="text" class="form-control" name="owner_name" id="Name" placeholder="نام مالک تشبث" required>
                         </div>
                         <div class="form-group col-md-12">
                         <label for="Phone">نام تشبث*</label>
-                        <input type="text" class="form-control" name="" id="Business name" placeholder="نام تشبث">
+                        <input type="text" class="form-control" name="buisness_name" id="Business_name" placeholder="نام تشبث" required>
                         </div>
                         <div class="form-group col-md-12">
                         <label for="Phone">محصول که شما میخواهید بفروشید *</label>
-                        <input type="text" class="form-control" name="" id="products" placeholder="محصول که شما میخواهید بفروشید ">
+                        <input type="text" class="form-control" name="products" id="products" placeholder="محصول که شما میخواهید بفروشید " required>
                         </div>
                         <div class="form-group col-md-12">
                         <label for="Phone">ایمیل آدرس شما*</label>
-                        <input type="text" class="form-control" name="" id="Email" placeholder="ایمیل آدرس شما">
+                        <input type="email" class="form-control" name="email" id="Email" placeholder="ایمیل آدرس شما" required>
                         </div>
                         <div class="form-group col-md-12">
                         <label for="Phone">شماره تماس *</label>
-                        <input type="text" class="form-control" name="" id="Phone" placeholder="شماره تماس ">
+                        <input type="text" class="form-control" name="phone" id="Phone" placeholder="شماره تماس "required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')" >
                         </div>
                         </div>
                         <div class="modal-footer" style="border-top: none;">
                         <div class="form-group col-md-12">
-                        <input type="button" class="btn btn-next btn-fill btn-success btn-wd pull-left" data-dismiss="modal" name="next" value="Submit" style=" width: 100%; padding: 15px;">
+                        <input type="submit" class="btn btn-next btn-fill btn-success btn-wd pull-left" data-dismiss="modal" name="next" value="Submit" style=" width: 100%; padding: 15px;">
                      </div>
 						</div>
+               </form>
                         </div>
                         </div>
                         </div>
@@ -611,5 +618,23 @@
       </script>
       <!-- MAIN SCRIPT -->
       <script src="js/main.js"></script>
+      <script type="text/javascript">
+         function validatee(evt) {
+           var theEvent = evt || window.event;
+           var key = theEvent.keyCode || theEvent.which;
+           key = String.fromCharCode( key );
+           var regex = /[0-9]|\./;
+           if( !regex.test(key) ) {
+             theEvent.returnValue = false;
+             if(theEvent.preventDefault) theEvent.preventDefault();
+           }
+         }
+      </script>
+ <script type="text/javascript">
+   $( "#preregister" ).submit(function( event ) {
+   var code = $(".country.active").attr('data-dial-code');
+   $('#phone2').attr('value',code);
+});
+</script>
    </body>
 </html>

@@ -18,18 +18,18 @@
       <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
       <link rel="icon" sizes="192x192" href="images/favicon/icon-192x192.png">
       <!-- CSS -->
-      <!--  GOOGLE FONT -->		
+      <!--  GOOGLE FONT -->      
       <link href='https://fonts.googleapis.com/css?family=Raleway:400,200%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
       <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.10/css/intlTelInput.css'>
       <!-- BOOTSTRAP -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
+      <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->      
       <link rel="stylesheet" href="css/icons-fonts.css" >
-      <!-- CSS THEME -->	
+      <!-- CSS THEME -->   
       <link rel="stylesheet" href="css/style.min.css" >
-	   <link rel="stylesheet" href="css/style.css" >
-	   
-      <!-- ANIMATE -->	
+      <link rel="stylesheet" href="css/style.css" >
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.12/css/intlTelInput.css" >
+      <!-- ANIMATE -->  
       <link rel='stylesheet' href="css/animate.min.css">
       <!-- IE Warning CSS -->
       <!--[if lte IE 8]>
@@ -38,7 +38,7 @@
       <!--[if lte IE 8]>
       <link rel="stylesheet" type="text/css" href="css/ie8-fix.css" >
       <![endif]-->
-      <!-- Magnific popup, Owl Carousel Assets in style.css -->		
+      <!-- Magnific popup, Owl Carousel Assets in style.css -->      
       <!-- CSS end -->
       <!-- JS begin some js files in bottom of file-->
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,6 +51,7 @@
    <body class="font-raleway">
       <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
          <div class="modal-dialog">
+            
             <!-- Modal content-->
             <div class="modal-content">
                <button title="Close (Esc)" class="close mfp" data-dismiss="modal">×</button>
@@ -61,11 +62,15 @@
                         <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 30px;"> Pre-Register with Tamaaas</h3>
                         <h4>First <b>1000</b> users will receive early access to Tamaaas and EPaysa ICO.</h4>
                      </div>
+                     <form method="POST" action="preregister.php" name="preregister" id="preregister" >
                      <div class="demo">
-                        <input type="tel" id="phone" class="form-control">
-                        <button id="submit" type="submit" class="country_verify">Signup</button>
+                        <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
+                        <input type="hidden" id="phone2" name="phone-full" value="">
+                        <input type="hidden" name='lang' value='en'>
+                        <button  type="submit" id="submit" type="submit" class="country_verify">Signup</button>
                         <p class="terms">T&C* : First come first serve basis</p>
                      </div>
+                  </form>
                      <div id="result"></div>
                   </div>
                </div>
@@ -78,13 +83,13 @@
          </div>
          <!-- end chat -->
       </div>
-      <!-- LOADER -->	
+      <!-- LOADER -->   
       <div id="loader-overflow">
          <div id="loader3" class="loader-cont">Please enable JS</div>
       </div>
       <div id="wrap" class="boxed ">
          <div class="grey-bg">
-            <!-- Grey BG  -->	
+            <!-- Grey BG  --> 
             <!--[if lte IE 8]>
             <div id="ie-container">
                <div id="ie-cont-close">
@@ -185,6 +190,7 @@
                <div class="modal-dialog">
                   <!-- Modal content-->
                   <div class="modal-content">
+                     <form id="myform" action="partner.php" name="myform" method="POST">
                      <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title text-center partner">Become a Partner with Tamaaas</h4>
@@ -193,30 +199,31 @@
                      <div class="modal-body">
                         <div class="form-group col-md-12">
                            <label for="Phone">Business Owner Name*</label>
-                           <input type="text" class="form-control" name="" id="Name" placeholder="Owner Name">
+                           <input type="text" class="form-control" name="owner_name" id="Name" placeholder="Owner Name" required>
                         </div>
                         <div class="form-group col-md-12">
                            <label for="Phone">Business Name*</label>
-                           <input type="text" class="form-control" name="" id="Business name" placeholder="Business Name">
+                           <input type="text" class="form-control" name="buisness_name" id="Business_name" placeholder="Business Name" required>
                         </div>
                         <div class="form-group col-md-12">
                            <label for="Phone">What product do you sell?*</label>
-                           <input type="text" class="form-control" name="" id="products" placeholder="Products you want to sell">
+                           <input type="text" class="form-control" name="products" id="products" placeholder="Products you want to sell">
                         </div>
                         <div class="form-group col-md-12">
                            <label for="Phone">Your Email Address*</label>
-                           <input type="text" class="form-control" name="" id="Email" placeholder="Email Address">
+                           <input type="email" class="form-control" name="email" id="Email" placeholder="Email Address" required >
                         </div>
                         <div class="form-group col-md-12">
                            <label for="Phone">Phone Number*</label>
-                           <input type="text" class="form-control" name="" id="Phone" placeholder="Phone Number">
+                           <input type="text" class="form-control" name="phone" id="Phone" placeholder="Phone Number" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')" >
                         </div>
                      </div>
                      <div class="modal-footer" style="border-top: none;">
                         <div class="form-group col-md-12">
-                           <input type="button" class="btn btn-next btn-fill btn-success btn-wd pull-left" data-dismiss="modal" name="next" value="Submit" style=" width: 100%; padding: 15px;">
+                           <input type="submit" id="submitt" class="btn btn-next btn-fill btn-success btn-wd pull-left"  name="next" value="Submit" style=" width: 100%; padding: 15px;" >
                         </div>
                      </div>
+                  </form>
                   </div>
                </div>
             </div>
@@ -533,8 +540,8 @@
             <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
          </p>
       </div>
-      <!-- End BG -->	
-      <!-- End wrap -->	
+      <!-- End BG -->   
+      <!-- End wrap --> 
       <!-- JS begin -->
       <!-- jQuery  -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -542,7 +549,7 @@
       <script type="text/javascript" src="js/country-code.js"></script>
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>		
+      <script src="js/bootstrap.min.js"></script>     
       <!-- MAGNIFIC POPUP -->
       <script src="js/jquery.magnific-popup.min.js"></script>
       <!-- PORTFOLIO SCRIPTS -->
@@ -555,7 +562,7 @@
       <script src="js/jquery.nav.js"></script>
       <script type="text/javascript">
          $(document).ready(function() {
-         //ONE PAGE NAV	---------------------------------------------------------------------------
+         //ONE PAGE NAV ---------------------------------------------------------------------------
          var top_offset = $('header').height() - 1;  // get height of fixed navbar
          
          $('#nav-onepage').onePageNav({
@@ -567,13 +574,13 @@
          filter: '',
          easing: 'swing',
          begin: function() {
-         	//I get fired when the animation is starting
+            //I get fired when the animation is starting
          },
          end: function() {
-         	//I get fired when the animation is ending
+            //I get fired when the animation is ending
          },
          scrollChange: function($currentListItem) {
-         	//I get fired when you enter a section and I pass the list item of the section
+            //I get fired when you enter a section and I pass the list item of the section
          }
          });
              
@@ -584,7 +591,30 @@
          
          //END document.ready 
       </script>
+<!--       <script type="text/javascript">
+         $("#myform").ajaxSubmit({url: 'partner.php', type: 'post'})
+      </script> -->
       <!-- MAIN SCRIPT -->
       <script src="js/main.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+      <script type="text/javascript">
+         function validatee(evt) {
+           var theEvent = evt || window.event;
+           var key = theEvent.keyCode || theEvent.which;
+           key = String.fromCharCode( key );
+           var regex = /[0-9]|\./;
+           if( !regex.test(key) ) {
+             theEvent.returnValue = false;
+             if(theEvent.preventDefault) theEvent.preventDefault();
+           }
+         }
+      </script>
+ <script type="text/javascript">
+   $( "#preregister" ).submit(function( event ) {
+   var code = $(".country.active").attr('data-dial-code');
+   $('#phone2').attr('value',code);
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.12/js/utils.js" />
    </body>
 </html>
