@@ -72,7 +72,7 @@
                         <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 30px;"> Pre-Register with Tamaaas</h3>
                         <h4>First <b>1000</b> users will receive early access to Tamaaas and EPaysa ICO.</h4>
                      </div>
-                     <form method="POST" action="preregister.php" name="preregister" id="preregister" >
+                     <form method="POST" action="php/preregister.php" name="preregister" id="preregister" >
                      <div class="demo">
                         <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
                         <input type="hidden" id="phone2" name="phone-full" value="">
@@ -200,7 +200,8 @@
                <div class="modal-dialog">
                   <!-- Modal content-->
                   <div class="modal-content">
-                     <form id="myform" action="partner.php" name="myform" method="POST">
+                     <form id="myform" action="php/partner.php" name="myform" method="POST">
+                     <input type="hidden" name='lang' value='en'>
                      <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title text-center partner">Become a Partner with Tamaaas</h4>
@@ -496,7 +497,7 @@
                   <div class="col-md-3 col-sm-3 widget float_left">
                      <h4 class="font-raleway">Navigate</h4>
                      <ul class="links-list a-text-cont a-text-main-cont font-raleway">
-                        <li><a href="Tamaaas_1.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a data-toggle="modal" data-target="#myModal">Sell</a></li>
                      </ul>
@@ -505,9 +506,9 @@
                      <h4 class="font-raleway">Insights</h4>
                      <ul class="links-list a-text-cont font-raleway" >
                         <li><a href="https://www.wieldata.com/" target="new">Company</a></li>
-                        <li><a href="services.html">What We Do</a></li>
-                        <li><a href="https://etherntoz.000webhostapp.com/Epaysa/EPaysa/index.html" target="new">EPaysa</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li>What We Do</li>
+                        <li>EPaysa</li>
+                        <li>Terms of Service</li>
                      </ul>
                   </div>
                   <div class="col-md-3 col-sm-3 widget float_left">
@@ -534,13 +535,13 @@
                   <!-- Social Links -->
                   <div class="footer2-soc-a right">
                      <a href="https://m.facebook.com/Tamaaas-App-290563514759664/" target="_blank"><i class="fa fa-facebook"></i></a>
-                     <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                     <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                     <a href="https://twitter.com/tamaaas_app" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                     <i class="fa fa-linkedin"></i>
                      <a href="https://www.instagram.com/tamaaas_app" target="_blank"><i class="fa fa-instagram"></i></a>
                   </div>
                   <!-- Copyright -->
                   <div class="left">
-                     <p class="footer2-copy">© 2017 Tamaaas. All Rights Reserved.</p>
+                     <p class="footer2-copy">© 2018 Tamaaas. All Rights Reserved.</p>
                   </div>
                </div>
             </div>
@@ -596,8 +597,19 @@
              
          });
          $(window).load(function(){
-                $('#onload').modal('show');
+            var first = getUrlVars()["f"];
+            function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
             });
+            return vars;
+            }          
+            if(!first)      
+             {
+               $('#onload').modal('show');
+            }
+             });
          
          //END document.ready 
       </script>

@@ -72,7 +72,7 @@
 به تماس و EPaysa را  پیدا خواهند کرد.
 </h4>
                      </div>
-                      <form method="POST" action="preregister.php" name="preregister" id="preregister" >
+                      <form method="POST" action="php/preregister.php" name="preregister" id="preregister" >
                      <div class="demo">
                         <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
                         <input type="hidden" id="phone2" name="phone-full" value="">
@@ -177,7 +177,7 @@
                                      <li class="parent">
                             <a href="Tamaaas_1_dari.html" class="open-sub">دری</a>
                             <ul class="sub">               
-                              <li><a href="Tamaaas_1.html">English</a></li>
+                              <li><a href="index.html">English</a></li>
                               <li><a href="Tamaaas_1_phasto.html">پشتو </a></li>
                             </ul>
                           </li>
@@ -211,7 +211,8 @@
                         <div class="modal-dialog">
                         <!-- Modal content-->
                         <div class="modal-content">
-                        <form id="myform" action="partner.php" name="myform" method="POST">
+                        <form id="myform" action="php/partner.php" name="myform" method="POST">
+                        <input type="hidden" name='lang' value='da'>
                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title text-center partner">عضو شدن با تاماس </h4>
@@ -237,12 +238,12 @@
                         </div>
                         <div class="form-group col-md-12">
                         <label for="Phone">شماره تماس *</label>
-                        <input type="text" class="form-control" name="phone" id="Phone" placeholder="شماره تماس "required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')" >
+                        <input type="tel" class="form-control" name="phone" id="Phone" placeholder="شماره تماس "required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')" >
                         </div>
                         </div>
                         <div class="modal-footer" style="border-top: none;">
                         <div class="form-group col-md-12">
-                        <input type="submit" class="btn btn-next btn-fill btn-success btn-wd pull-left" data-dismiss="modal" name="next" value="Submit" style=" width: 100%; padding: 15px;">
+                        <input type="submit" class="btn btn-next btn-fill btn-success btn-wd pull-left" name="next" value="Submit" style=" width: 100%; padding: 15px;">
                      </div>
 						</div>
                </form>
@@ -498,7 +499,7 @@
                   <div class="row">
                      <div class="col-md-3 col-sm-3 widget">
                         <div class="logo-footer-cont">
-                           <a href="index.html">
+                           <a href="Tamaaas_1_dari.html">
                            <img class="logo-footer" src="images/logo-footer-white.png" alt="logo">
                            </a>
                         </div>
@@ -516,18 +517,18 @@
                      <div class="col-md-3 col-sm-3 widget float_left">
                         <h4 class="font-raleway">هدایت کردن</h4>
                         <ul class="links-list a-text-cont a-text-main-cont font-raleway">
-                           <li><a href="index.html">خانه</a></li>
-							<li><a href="services.html">خصوصیات</a></li>
-                           <li><a href="index-shop.html">فروختن (بفروش رفتن)</a></li>
+                           <li><a href="Tamaaas_1_dari.html">خانه</a></li>
+							<li><a href="#features">خصوصیات </a></li>
+                           <li><a data-toggle="modal" data-target="#myModal">فروختن (بفروش رفتن)</a></li>
                         </ul>
                      </div>
                      <div class="col-md-3 col-sm-3 widget float_right">
                         <h4 class="font-raleway">بصیرت</h4>
                         <ul class="links-list a-text-cont font-raleway" >
-                           <li><a href="about-us.html">شرکت </a></li>
-                           <li><a href="services.html">جیزی را که ما انجام میدهیم </a></li>
-                           <li><a href="#">شرایط استفاده از خدمات </a></li>
-                           <li><a href="contact.html">تماس </a></li>
+                           <li><a href="https://www.wieldata.com/" target="new">شرکت </a></li>
+                           <li>جیزی را که ما انجام میدهیم </li>
+                           <li>شرایط استفاده از خدمات </li>
+                           <li>تماس </li>
                         </ul>
                      </div>
                      
@@ -557,14 +558,14 @@
                      <!-- Social Links -->
                      <div class="footer2-soc-a right">
                         <a href="https://m.facebook.com/Tamaaas-App-290563514759664/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://twitter.com/tamaaas_app" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <i class="fa fa-linkedin"></i>
                          <a href="https://www.instagram.com/tamaaas_app" target="_blank"><i class="fa fa-instagram"></i></a>
                      
                      </div>
                      <!-- Copyright -->
                      <div class="left">
-                        <a class="footer2-copy" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; Tamaaas</a>
+                        <a class="footer2-copy" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; 2018 Tamaaas. All Rights Reserved.</a>
                      </div>
                   </div>
                </div>
@@ -620,9 +621,20 @@
          });
              
          });
-         $(window).load(function(){
-                $('#onload').modal('show');
+          $(window).load(function(){
+            var first = getUrlVars()["f"];
+            function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
             });
+            return vars;
+            }          
+            if(!first)      
+             {
+               $('#onload').modal('show');
+            }
+             });
          
          //END document.ready 
       </script>
