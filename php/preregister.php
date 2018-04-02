@@ -7,7 +7,7 @@ $dbHost = $config["db_host"];
 $dbName= $config["db_name"];
 $dbUser = $config["db_user"];
 $dbPwd = $config["db_pass"];
-$con = mysqli_connect("$dbHost","$dbUser","$dbPwd","dbName");
+$con = mysqli_connect("$dbHost","$dbUser","$dbPwd","$dbName");
 $lang = $_POST['lang'];
 
 
