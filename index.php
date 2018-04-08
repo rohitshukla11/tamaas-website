@@ -10,5 +10,7 @@ elseif ($details->country == 'PAK') {
 elseif ($details->country == 'AF') {
 	header("location: $_SERVER['REQUEST_URI']/dari.php");
 }
+else
+	header("location: $_SERVER['REQUEST_URI']/eng.php");
 
 ?>
