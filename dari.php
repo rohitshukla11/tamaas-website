@@ -56,6 +56,97 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
    </head>
+      <?php 
+   require('db.php');
+   $phone = $_POST['phone-full'];
+   $oname = $_POST['owner_name'];
+   $buisness_name = $_POST['buisness_name'];
+   $products =$_POST['products'];
+   $email = $_POST['email'];
+   $partner_phone = $_POST['phone'];
+   $lang = $_POST['lang'];
+   if(!$con){
+      echo "error estabilishing connection";
+   }
+
+  else { 
+   if(isset($phone))
+   {
+   $phonen = $_POST['pre_phone'];
+   $phone = '+'.$phone.$phonen ;
+   $sql = "SELECT id FROM pre_register WHERE phone='$phone'";
+   $result = mysqli_query($con, $sql);
+
+   if (mysqli_num_rows($result) > 0) {
+      if($lang == 'en') {
+      echo "<script>alert('Thank You! You are already registered.');location.replace('http://tamaaas.com/eng.php?f=1')</script>";
+      }
+      else if($lang == 'pa') {
+      $msg1 = 'له تاسو مننه! تاسو لا دمخه ثبت شوی یاست.';
+       echo "<script>alert('$msg1');location.replace('http://tamaaas.com/Tamaaas_1_phasto.php?f=1')</script>";
+   }
+     else if($lang =='da') {
+      $msg1 = 'متشکرم! شما قبلا ثبت نام کرده اید' ;
+       echo "<script>alert('$msg1');location.replace('http://tamaaas.com/Tamaaas_1_dari.php?f=1')</script>";
+     }
+   }
+
+    else {
+   $sql1 = "INSERT INTO pre_register (phone )
+   VALUES ('$phone' )";
+
+   if (mysqli_query($con, $sql1)) {
+      if($lang == 'en') {
+      $msg1 = 'Thank you for Pre-registering with Tamaaas.';
+      $msg = 'We will text you about our launch! Also if you have any suggestion or query, please write us at:';
+       echo "<script>var flag = 1 ;</script>";
+   }
+      else if($lang == 'pa') {
+      $msg1 = 'د تامایا سره د پری ثبتولو لپاره مننه.';
+      $msg = 'موږ به ستاسو د لانجې په اړه لیکو. همدارنګه که تاسو کوم وړاندیز یا پوښتنې لرئ، نو مهرباني وکړئ موږ ته ولیکئ:';
+      echo "<script>var flag = 1 ;</script>";
+   }
+      else if($lang =='da') {
+      $msg1 = 'با تشکر از شما برای پیش ثبت نام با Tamaaas.';
+      $msg = 'ما شما را در مورد راه اندازی ما متن می نویسیم! همچنین اگر پیشنهاد یا پرسشی دارید، لطفا به ما بگویید:' ;
+       echo "<script>var flag = 1 ;</script>";
+     }
+   } else {
+       echo "Error: " . $sql . "<br>" . mysqli_error($con);
+   }
+
+   mysqli_close($con);
+ }
+}
+if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) && isset($partner_phone))
+{
+   $sql2 = "INSERT INTO partner (owner_name, buisness_name, products, email, phone )
+   VALUES ('$oname', '$buisness_name' , '$products' ,'$email', '$partner_phone' )";
+
+   if (mysqli_query($con, $sql2)) {
+      if($lang == 'en') {
+      $msg1 = 'Thank you for Pre-registering with Tamaaas.';
+      $msg = 'We will text you about our launch! Also if you have any suggestion or query, please write us at:';
+       echo "<script>var flag = 1 ;</script>";
+   }
+      else if($lang == 'pa') {
+      $msg1 = 'د تامایا سره د پری ثبتولو لپاره مننه.';
+      $msg = 'موږ به ستاسو د لانجې په اړه لیکو. همدارنګه که تاسو کوم وړاندیز یا پوښتنې لرئ، نو مهرباني وکړئ موږ ته ولیکئ:';
+      echo "<script>var flag = 1 ;</script>";
+   }
+      else if($lang =='da') {
+      $msg1 = 'با تشکر از شما برای پیش ثبت نام با Tamaaas.';
+      $msg = 'ما شما را در مورد راه اندازی ما متن می نویسیم! همچنین اگر پیشنهاد یا پرسشی دارید، لطفا به ما بگویید:' ;
+       echo "<script>var flag = 1 ;</script>";
+     }
+   } else {
+       echo "Error: " . $sql . "<br>" . mysqli_error($con);
+   }
+
+   mysqli_close($con);
+}
+
+?>
    <body class="font-raleway">
 	    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
          <div class="modal-dialog">
@@ -64,6 +155,7 @@
                <button title="Close (Esc)" class="close mfp" data-dismiss="modal">×</button>
                <div class="white-popup">
                   <div class="kt-popup-newsletter">
+                     <div id="preregister-box" >
                      <div class="popup-title">
                         <img src="images/gift.gif" alt="Gift">
                         <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 30px;"> با تماس  پیش از  پیش ببیوندید</h3>
@@ -72,7 +164,7 @@
 به تماس و EPaysa را  پیدا خواهند کرد.
 </h4>
                      </div>
-                      <form method="POST" action="php/preregister.php" name="preregister" id="preregister" >
+                      <form method="POST" action="dari.php" name="preregister" id="preregister" >
                      <div class="demo">
                         <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
                         <input type="hidden" id="phone2" name="phone-full" value="">
@@ -81,7 +173,21 @@
                         <p class="terms">T & C *: ابتدا برای نخستین بار خدمت می کنیم</p>
                      </div>
                   </form>
-                     <div id="result"></div>
+               </div>
+                     <div id="result" style="display: none">
+               <div class="newsletter">
+                <div class="newsletter_body">
+                  <div class="newsletter_icon">
+                    <img src="Submit_thanks.gif" alt="Thanks" />
+                  </div>
+                  <div class="newsletter_text">
+                    <h2><?php echo $msg1 ?></h2>
+                    <p><?php echo $msg ?></p>
+                    <a href="mailto:info@Tamaaas.com">info@Tamaaas.com</a>
+                  </div>
+                </div>
+               </div> 
+                     </div>
                   </div>
                </div>
             </div>
@@ -138,7 +244,7 @@
                         <!-- LOGO --> 
                         <div class="logo-container-2">
                            <div class="logo-2">
-                              <a href="index.html" class="clearfix">
+                              <a href="dari.php" class="clearfix">
                               <img src="images/logo.png" class="logo-img" alt="Logo">
                               </a>
                            </div>
@@ -175,10 +281,10 @@
                                        </a>
                                     </li>
                                      <li class="parent">
-                            <a href="dari.html" class="open-sub">دری</a>
+                            <a href="dari.php" class="open-sub">دری</a>
                             <ul class="sub">               
-                              <li><a href="index.html">English</a></li>
-                              <li><a href="phasto.html">پشتو </a></li>
+                              <li><a href="eng.php">English</a></li>
+                              <li><a href="phasto.php">پشتو </a></li>
                             </ul>
                           </li>
                                     
@@ -211,7 +317,7 @@
                         <div class="modal-dialog">
                         <!-- Modal content-->
                         <div class="modal-content">
-                        <form id="myform" action="php/partner.php" name="myform" method="POST">
+                        <form id="myform" action="dari.php" name="myform" method="POST">
                         <input type="hidden" name='lang' value='da'>
                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -499,7 +605,7 @@
                   <div class="row">
                      <div class="col-md-3 col-sm-3 widget">
                         <div class="logo-footer-cont">
-                           <a href="dari.html">
+                           <a href="dari.php">
                            <img class="logo-footer" src="images/logo-footer-white.png" alt="logo">
                            </a>
                         </div>
@@ -517,7 +623,7 @@
                      <div class="col-md-3 col-sm-3 widget float_left">
                         <h4 class="font-raleway">هدایت کردن</h4>
                         <ul class="links-list a-text-cont a-text-main-cont font-raleway">
-                           <li><a href="dari.html">خانه</a></li>
+                           <li><a href="dari.php">خانه</a></li>
 							<li><a href="#features">خصوصیات </a></li>
                            <li><a data-toggle="modal" data-target="#myModal">فروختن (بفروش رفتن)</a></li>
                         </ul>
@@ -658,5 +764,15 @@
    $('#phone2').attr('value',code);
 });
 </script>
+<script type="text/javascript">
+   var flag;
+   if(flag == 1){
+      $('#preregister-box').css('display','none');
+      $('#result').css('display','block');
+   }
+</script>
    </body>
 </html>
+<?php 
+}
+?>
