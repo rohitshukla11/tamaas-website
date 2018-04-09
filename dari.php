@@ -77,15 +77,19 @@
    $result = mysqli_query($con, $sql);
    if (mysqli_num_rows($result) > 0) {
       if($lang == 'en') {
-      echo "<script>alert('Thank You! You are already registered.');location.replace('http://tamaaas.com/index.php?f=1')</script>";
+      $msg1 = 'Thank You! You are already registered.';
+      $msg = 'We will text you about our launch! Also if you have any suggestion or query, please write us at:';
+       echo "<script>var flag = 1 ;</script>";
       }
       else if($lang == 'pa') {
       $msg1 = 'له تاسو مننه! تاسو لا دمخه ثبت شوی یاست.';
-       echo "<script>alert('$msg1');location.replace('http://tamaaas.com/Tamaaas_1_phasto.php?f=1')</script>";
+      $msg = 'موږ به ستاسو د لانجې په اړه لیکو. همدارنګه که تاسو کوم وړاندیز یا پوښتنې لرئ، نو مهرباني وکړئ موږ ته ولیکئ:';
+      echo "<script>var flag = 1 ;</script>";
    }
      else if($lang =='da') {
       $msg1 = 'متشکرم! شما قبلا ثبت نام کرده اید' ;
-       echo "<script>alert('$msg1');location.replace('http://tamaaas.com/Tamaaas_1_dari.php?f=1')</script>";
+      $msg = 'ما شما را در مورد راه اندازی ما متن می نویسیم! همچنین اگر پیشنهاد یا پرسشی دارید، لطفا به ما بگویید:' ;
+       echo "<script>var flag = 1 ;</script>";
      }
    }
     else {
