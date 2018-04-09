@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -18,16 +19,16 @@
       <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
       <link rel="icon" sizes="192x192" href="images/favicon/icon-192x192.png">
       <!-- CSS -->
-      <!--  GOOGLE FONT -->		
+      <!--  GOOGLE FONT -->      
       <link href='https://fonts.googleapis.com/css?family=Raleway:400,200%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
-	    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.10/css/intlTelInput.css'>
+       <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.10/css/intlTelInput.css'>
       <!-- BOOTSTRAP -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
+      <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->      
       <link rel="stylesheet" href="css/icons-fonts.css" >
-      <!-- CSS THEME -->		
+      <!-- CSS THEME -->      
       <link rel="stylesheet" href="css/style.css" >
-      <!-- ANIMATE -->	
+      <!-- ANIMATE -->  
       <link rel='stylesheet' href="css/animate.min.css">
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116713729-1"></script>
@@ -35,7 +36,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-116713729-1');
       </script>
 
@@ -46,7 +46,7 @@
       <!--[if lte IE 8]>
       <link rel="stylesheet" type="text/css" href="css/ie8-fix.css" >
       <![endif]-->
-      <!-- Magnific popup, Owl Carousel Assets in style.css -->		
+      <!-- Magnific popup, Owl Carousel Assets in style.css -->      
       <!-- CSS end -->
       <!-- JS begin some js files in bottom of file-->
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,7 +68,6 @@
    if(!$con){
       echo "error estabilishing connection";
    }
-
   else { 
    if(isset($phone))
    {
@@ -76,10 +75,9 @@
    $phone = '+'.$phone.$phonen ;
    $sql = "SELECT id FROM pre_register WHERE phone='$phone'";
    $result = mysqli_query($con, $sql);
-
    if (mysqli_num_rows($result) > 0) {
       if($lang == 'en') {
-      echo "<script>alert('Thank You! You are already registered.');location.replace('http://tamaaas.com/eng.php?f=1')</script>";
+      echo "<script>alert('Thank You! You are already registered.');location.replace('http://tamaaas.com/index.php?f=1')</script>";
       }
       else if($lang == 'pa') {
       $msg1 = 'له تاسو مننه! تاسو لا دمخه ثبت شوی یاست.';
@@ -90,11 +88,9 @@
        echo "<script>alert('$msg1');location.replace('http://tamaaas.com/Tamaaas_1_dari.php?f=1')</script>";
      }
    }
-
     else {
    $sql1 = "INSERT INTO pre_register (phone )
    VALUES ('$phone' )";
-
    if (mysqli_query($con, $sql1)) {
       if($lang == 'en') {
       $msg1 = 'Thank you for Pre-registering with Tamaaas.';
@@ -114,7 +110,6 @@
    } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($con);
    }
-
    mysqli_close($con);
  }
 }
@@ -122,7 +117,6 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
 {
    $sql2 = "INSERT INTO partner (owner_name, buisness_name, products, email, phone )
    VALUES ('$oname', '$buisness_name' , '$products' ,'$email', '$partner_phone' )";
-
    if (mysqli_query($con, $sql2)) {
       if($lang == 'en') {
       $msg1 = 'Thank you for Pre-registering with Tamaaas.';
@@ -142,13 +136,11 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
    } else {
        echo "Error: " . $sql . "<br>" . mysqli_error($con);
    }
-
    mysqli_close($con);
 }
-
 ?>
    <body class="font-raleway">
-	    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
+       <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
          <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -199,13 +191,13 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
          </div>
          <!-- end chat -->
       </div>
-      <!-- LOADER -->	
+      <!-- LOADER -->   
       <div id="loader-overflow">
          <div id="loader3" class="loader-cont">Please enable JS</div>
       </div>
       <div id="wrap" class="boxed ">
          <div class="grey-bg">
-            <!-- Grey BG  -->	
+            <!-- Grey BG  --> 
             <!--[if lte IE 8]>
             <div id="ie-container">
                <div id="ie-cont-close">
@@ -235,7 +227,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             <!-- HEADER 1 FONT WHITE TRANSPARENT -->
             <div class="header-black-bg"></div>
          <!--   <a class="get-app sticky--bottom invisible" target="_blank" href="#" >برنامه را دریافت کنید</a> -->
-			 <a class="get-app sticky--bottom invisible" target="_blank" data-toggle="modal" data-target="#onload" >پیش از ثبت نام برای دریافت دسترسی سریع </a> 
+          <a class="get-app sticky--bottom invisible" target="_blank" data-toggle="modal" data-target="#onload" >پیش از ثبت نام برای دریافت دسترسی سریع </a> 
             <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
             <header id="nav" class="header header-1 header-black">
                <div class="header-wrapper">
@@ -283,7 +275,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                                      <li class="parent">
                             <a href="dari.php" class="open-sub">دری</a>
                             <ul class="sub">               
-                              <li><a href="eng.php">English</a></li>
+                              <li><a href="index.php">English</a></li>
                               <li><a href="phasto.php">پشتو </a></li>
                             </ul>
                           </li>
@@ -351,7 +343,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <div class="form-group col-md-12">
                         <input type="submit" class="btn btn-next btn-fill btn-success btn-wd pull-left" name="next" value="Submit" style=" width: 100%; padding: 15px;">
                      </div>
-						</div>
+                  </div>
                </form>
                         </div>
                         </div>
@@ -363,23 +355,23 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                </div>
             </div>
             <div class=" container download_apps">
-            	<div class="row">
-            	<div class="col-md-12 text-center">
+               <div class="row">
+               <div class="col-md-12 text-center">
                         <h3 class="font-light">چت رایگان، تماس های ویدئویی و صوتی رایگان. ارسال و درخواست پول، شریک سازی شرح</h3>
                           
                            
-					</div>
-            		<div class="col-md-12 col-sm-12 text-center apps">
-            		
+               </div>
+                  <div class="col-md-12 col-sm-12 text-center apps">
+                  
                                  <a class="" href="#"><img src="images/apple-app-store-icon_1x.png">
                                  </a><a class="" href="#"><img src="images/Google_play_1x.png">
                               </a></div>
-            		</div>
-            		
-            	</div>
-            	
+                  </div>
+                  
+               </div>
+               
             </div>
-		  <div class="page-section" id="features">
+        <div class="page-section" id="features">
                <div class="container">
                   <div class="row hh">
                      <div class="col-md-6">
@@ -534,13 +526,13 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             <!-- FEATURES 7 HALF IMG -->
             <div id="work-process-link" class="container-fluid p-110-cont bg-gray">
               <div class="row">
-				  <div class="col-md-2 text-center"></div>
-              	<div class="col-md-8 text-center">
-					 <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 34px;"> برای صاحب کاروبار و تجار</h3>
+              <div class="col-md-2 text-center"></div>
+               <div class="col-md-8 text-center">
+                <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 34px;"> برای صاحب کاروبار و تجار</h3>
 
 <p class="text-center">مالکان تشبث و مغازه ها می توانند از برنامه تماس با حساب های شخصی خود برای شروع پرداختن از پرداخت  دیجیتال استفاده کنند.پرداخت ها بدون هزینه  به طور مستقیم به حساب بانکی شما می رسد.</p>
     
-					</div>
+               </div>
               <div class="col-md-2 text-center"></div>
               </div>
                <div class="row">
@@ -624,7 +616,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <h4 class="font-raleway">هدایت کردن</h4>
                         <ul class="links-list a-text-cont a-text-main-cont font-raleway">
                            <li><a href="dari.php">خانه</a></li>
-							<li><a href="#features">خصوصیات </a></li>
+                     <li><a href="#features">خصوصیات </a></li>
                            <li><a data-toggle="modal" data-target="#myModal">فروختن (بفروش رفتن)</a></li>
                         </ul>
                      </div>
@@ -681,9 +673,9 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
             </p>
          </div>
-         <!-- End BG -->	
+         <!-- End BG -->   
       
-      <!-- End wrap -->	
+      <!-- End wrap --> 
       <!-- JS begin -->
       <!-- jQuery  -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -691,7 +683,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
       <script type="text/javascript" src="js/country-code.js"></script>
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>		
+      <script src="js/bootstrap.min.js"></script>     
       <!-- MAGNIFIC POPUP -->
       <script src="js/jquery.magnific-popup.min.js"></script>
       <!-- PORTFOLIO SCRIPTS -->
@@ -704,7 +696,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
       <script src="js/jquery.nav.js"></script>
       <script type="text/javascript">
          $(document).ready(function() {
-         //ONE PAGE NAV	---------------------------------------------------------------------------
+         //ONE PAGE NAV ---------------------------------------------------------------------------
          var top_offset = $('header').height() - 1;  // get height of fixed navbar
          
          $('#nav-onepage').onePageNav({
@@ -716,13 +708,13 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
          filter: '',
          easing: 'swing',
          begin: function() {
-         	//I get fired when the animation is starting
+            //I get fired when the animation is starting
          },
          end: function() {
-         	//I get fired when the animation is ending
+            //I get fired when the animation is ending
          },
          scrollChange: function($currentListItem) {
-         	//I get fired when you enter a section and I pass the list item of the section
+            //I get fired when you enter a section and I pass the list item of the section
          }
          });
              
