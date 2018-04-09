@@ -37,7 +37,35 @@
       gtag('js', new Date());
       gtag('config', 'UA-116713729-1');
       </script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-809661206"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'AW-809661206');
+      </script>
+      <script>
+      $( document ).ready(function() {
+         function gtag_report_conversion(url) {
+            var callback = function () {
+               if (typeof(url) != 'undefined') {
+                  window.location = url;
+                  }
+               };
+                 gtag('event', 'conversion', {
+                     'send_to': 'AW-809661206/OvY1CKKE3H8QluaJggM',
+                     'value': 0.2,
+                     'currency': 'USD',
+                     'event_callback': callback
+                 });
+                 return false;
+            }
+         }
+      $('.country_verify').click(function(){
+         gtag_report_conversion();
+      });
+      </script>
       <!-- IE Warning CSS -->
       <!--[if lte IE 8]>
       <link rel="stylesheet" type="text/css" href="css/ie-warning.css" >
