@@ -268,7 +268,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <!-- LOGO --> 
                         <div class="logo-container-2">
                            <div class="logo-2">
-                              <a href="dari.php" class="clearfix">
+                              <a href="dari" class="clearfix">
                               <img src="images/logo.png" class="logo-img" alt="Logo">
                               </a>
                            </div>
@@ -305,10 +305,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                                        </a>
                                     </li>
                                      <li class="parent">
-                            <a href="dari.php" class="open-sub">دری</a>
+                            <a href="dari" class="open-sub">دری</a>
                             <ul class="sub">               
-                              <li><a href="index.php">English</a></li>
-                              <li><a href="phasto.php">پشتو </a></li>
+                              <li><a href="index">English</a></li>
+                              <li><a href="phasto">پشتو </a></li>
                             </ul>
                           </li>
                                     
@@ -341,7 +341,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <div class="modal-dialog">
                         <!-- Modal content-->
                         <div class="modal-content">
-                        <form id="myform" action="dari.php" name="myform" method="POST">
+                        <form id="myform" action="dari" name="myform" method="POST">
                         <input type="hidden" name='lang' value='da'>
                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -629,7 +629,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                   <div class="row">
                      <div class="col-md-3 col-sm-3 widget">
                         <div class="logo-footer-cont">
-                           <a href="dari.php">
+                           <a href="dari">
                            <img class="logo-footer" src="images/logo-footer-white.png" alt="logo">
                            </a>
                         </div>
@@ -647,7 +647,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <div class="col-md-3 col-sm-3 widget float_left">
                         <h4 class="font-raleway">هدایت کردن</h4>
                         <ul class="links-list a-text-cont a-text-main-cont font-raleway">
-                           <li><a href="dari.php">خانه</a></li>
+                           <li><a href="dari">خانه</a></li>
                      <li><a href="#features">خصوصیات </a></li>
                            <li><a data-toggle="modal" data-target="#myModal">فروختن (بفروش رفتن)</a></li>
                         </ul>
