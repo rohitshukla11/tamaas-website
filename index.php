@@ -265,7 +265,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <!-- LOGO --> 
                         <div class="logo-container-2">
                            <div class="logo-2">
-                              <a href="index.php" class="clearfix">
+                              <a href="index" class="clearfix">
                               <img src="images/logo.png" class="logo-img" alt="Logo">
                               </a>
                            </div>
@@ -298,10 +298,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                                        </a>
                                     </li>
                                     <li class="parent">
-                                       <a href="index.php" class="open-sub">English</a>
+                                       <a href="index" class="open-sub">English</a>
                                        <ul class="sub">
-                                          <li><a href="phasto.php">Phasto (پشتو)</a></li>
-                                          <li><a href="dari.php">Dari (دری) </a></li>
+                                          <li><a href="phasto">Phasto (پشتو)</a></li>
+                                          <li><a href="dari">Dari (دری) </a></li>
                                        </ul>
                                     </li>
                                  </ul>
@@ -327,7 +327,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                <div class="modal-dialog">
                   <!-- Modal content-->
                   <div class="modal-content">
-                     <form id="myform" action="index.php" name="myform" method="POST">
+                     <form id="myform" action="index" name="myform" method="POST">
                      <input type="hidden" name='lang' value='en'>
                      <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -607,7 +607,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                <div class="row">
                   <div class="col-md-3 col-sm-3 widget">
                      <div class="logo-footer-cont">
-                        <a href="index.php">
+                        <a href="index">
                         <img class="logo-footer" src="images/logo-footer-white.png" alt="logo">
                         </a>
                      </div>
@@ -624,7 +624,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                   <div class="col-md-3 col-sm-3 widget float_left">
                      <h4 class="font-raleway">Navigate</h4>
                      <ul class="links-list a-text-cont a-text-main-cont font-raleway">
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index">Home</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a data-toggle="modal" data-target="#myModal">Sell</a></li>
                      </ul>
