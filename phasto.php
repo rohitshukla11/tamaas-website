@@ -266,7 +266,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <!-- LOGO --> 
                         <div class="logo-container-2">
                            <div class="logo-2">
-                              <a href="index.php" class="clearfix">
+                              <a href="index" class="clearfix">
                               <img src="images/logo.png" class="logo-img" alt="Logo">
                               </a>
                            </div>
@@ -339,7 +339,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <div class="modal-dialog">
                         <!-- Modal content-->
                         <div class="modal-content">
-                          <form id="myform" action="phasto.php" name="myform" method="POST">
+                          <form id="myform" action="phasto" name="myform" method="POST">
                             <input type="hidden" name='lang' value='pa'>
                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
