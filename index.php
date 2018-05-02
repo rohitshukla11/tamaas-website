@@ -635,7 +635,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <li><a href="https://www.wieldata.com/" target="new">Company</a></li>
                         <li>What We Do</li>
                         <li>EPaysa</li>
-                        <li>Terms of Service</li>
+                        <li><a href="legal" target="new">Terms of Service</a></li>
                      </ul>
                   </div>
                   <div class="col-md-3 col-sm-3 widget float_left">

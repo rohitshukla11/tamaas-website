@@ -303,10 +303,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                                        </a>
                                     </li>
                                      <li class="parent">
-                            <a href="Tamaaas_1_phasto.html" class="open-sub">پشتو </a>
+                            <a href="phasto" class="open-sub">پشتو </a>
                             <ul class="sub">               
-                              <li><a href="Tamaaas_1.html">English</a></li>
-                              <li><a href="Tamaaas_1_dari.html">دری</a></li>
+                              <li><a href="index">English</a></li>
+                              <li><a href="dari">دری</a></li>
                             </ul>
                           </li>
                                     
@@ -629,7 +629,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                   <div class="row">
                      <div class="col-md-3 col-sm-3 widget">
                         <div class="logo-footer-cont">
-                           <a href="index.html">
+                           <a href="phasto">
                            <img class="logo-footer" src="images/logo-footer-white.png" alt="logo">
                            </a>
                         </div>
@@ -640,25 +640,25 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         </div>
                         <div class="footer2-text-cont">
                            +1 (929) 274-2121<br>
-                           <a class="a-text" href="mailto:info@haswell.com">info@Tamaaas.com</a>
+                           <a class="a-text" href="mailto:info@Tamaaas.com">info@Tamaaas.com</a>
                         </div>
                         
                      </div>
                      <div class="col-md-3 col-sm-3 widget float_left">
                         <h4 class="font-raleway">لار ښودل</h4>
                         <ul class="links-list a-text-cont a-text-main-cont font-raleway">
-                           <li><a href="index.html">کور پاڼه </a></li>
-              <li><a href="services.html">بڼې</a></li>
-                           <li><a href="index-shop.html">پلورل</a></li>
+                           <li><a href="phasto">کور پاڼه </a></li>
+                           <li>بڼې</li>
+                           <li>پلورل</li>
                         </ul>
                      </div>
                      <div class="col-md-3 col-sm-3 widget float_right">
                         <h4 class="font-raleway">کتنه</h4>
                         <ul class="links-list a-text-cont font-raleway" >
-                           <li><a href="about-us.html">کمپنۍ</a></li>
-                           <li><a href="services.html">هغه څه چې موږ يې ترسره کوو</a></li>
-                           <li><a href="#">د خدمتونو د کارونې شرطونه</a></li>
-                           <li><a href="contact.html">اړيکه</a></li>
+                           <li>کمپنۍ</li>
+                           <li>هغه څه چې موږ يې ترسره کوو</li>
+                           <li>د خدمتونو د کارونې شرطونه</li>
+                           <li>اړيکه</li>
                         </ul>
                      </div>
                      
@@ -687,10 +687,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                   <div class="footer2-copy-cont clearfix">
                      <!-- Social Links -->
                      <div class="footer2-soc-a right">
-                        <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                         <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://m.facebook.com/Tamaaas-App-290563514759664/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/tamaaas_app" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <i class="fa fa-linkedin"></i>
+                         <a href="https://www.instagram.com/tamaaas_app" target="_blank"><i class="fa fa-instagram"></i></a>
                      
                      </div>
                      <!-- Copyright -->
