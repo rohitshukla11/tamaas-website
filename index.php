@@ -1,15 +1,16 @@
+<!DOCTYPE html>
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
  if ($details->country == 'PAK') {
-   header("location:/phasto");
+   header("location:/phasto.php");
  }
  elseif ($details->country == 'AF'|| $details->country =='IRN') {
-   header("location:/dari");
+   header("location:/dari.php");
  }
-
+ else
+   {
 ?>
-
 <html>
    <head>
       <title>Tamaaas - Free Calling & Chat</title>
@@ -789,5 +790,6 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
 
 <?php 
 // Check connection
+}
 }
 ?>
