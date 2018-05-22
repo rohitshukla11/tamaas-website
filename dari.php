@@ -188,7 +188,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
 به تماس و EPaysa را  پیدا خواهند کرد.
 </h4>
                      </div>
-                      <form method="POST" action="dari.php" name="preregister" id="preregister" >
+                      <form method="POST" action="dari" name="preregister" id="preregister" >
                      <div class="demo">
                         <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
                         <input type="hidden" id="phone2" name="phone-full" value="">
@@ -307,7 +307,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                                      <li class="parent">
                             <a href="dari" class="open-sub">دری</a>
                             <ul class="sub">               
-                              <li><a href="index">English</a></li>
+                              <li><a href="eng">English</a></li>
                               <li><a href="phasto">پشتو </a></li>
                             </ul>
                           </li>

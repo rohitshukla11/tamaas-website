@@ -187,7 +187,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
 </h4>
                      </div>
                      <div class="demo">
-                      <form method="POST" action="phasto.php" name="preregister" id="preregister" >
+                      <form method="POST" action="phasto" name="preregister" id="preregister" >
                         <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
                         <input type="hidden" id="phone2" name="phone-full" value="">
                         <input type="hidden" name='lang' value='pa'>
@@ -266,7 +266,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <!-- LOGO --> 
                         <div class="logo-container-2">
                            <div class="logo-2">
-                              <a href="index" class="clearfix">
+                              <a href="phasto" class="clearfix">
                               <img src="images/logo.png" class="logo-img" alt="Logo">
                               </a>
                            </div>
@@ -305,7 +305,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                                      <li class="parent">
                             <a href="phasto" class="open-sub">پشتو </a>
                             <ul class="sub">               
-                              <li><a href="index">English</a></li>
+                              <li><a href="eng">English</a></li>
                               <li><a href="dari">دری</a></li>
                             </ul>
                           </li>
