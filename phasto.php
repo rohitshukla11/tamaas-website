@@ -655,7 +655,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <div class="col-md-3 col-sm-3 widget float_right">
                         <h4 class="font-raleway">کتنه</h4>
                         <ul class="links-list a-text-cont font-raleway" >
-                           <li><a href="https://www.wieldata.com/" target="new">کمپنۍ</li>
+                           <li><a href="https://www.wieldata.com/" target="new">کمپنۍ</a></li>
                            <li>هغه څه چې موږ يې ترسره کوو</li>
                            <li>د خدمتونو د کارونې شرطونه</li>
                            <li>اړيکه</li>
