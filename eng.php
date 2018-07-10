@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
    <head>
       <title>Tamaaas - Free Calling & Chat</title>
@@ -36,7 +36,15 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-       gtag('config', 'AW-809661206');
+      gtag('config', 'UA-116713729-1');
+      </script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-809661206"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-809661206');
       </script>
       <script>
       $( document ).ready(function() {
@@ -136,7 +144,6 @@
    }
  }
 }
-
 if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) && isset($partner_phone))
 {
    $sql2 = "INSERT INTO partner (owner_name, buisness_name, products, email, phone )
@@ -163,11 +170,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
    mysqli_close($con);
 }
 ?>
-
-  <body class="font-raleway">
-      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onlo$
+   <body class="font-raleway">
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
          <div class="modal-dialog">
-
+            
             <!-- Modal content-->
             <div class="modal-content">
                <button title="Close (Esc)" class="close mfp" data-dismiss="modal">×</button>
@@ -181,14 +187,14 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      </div>
                      <form method="POST" action="eng" name="preregister" id="preregister" >
                      <div class="demo">
-                        <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(ev$
+                        <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
                         <input type="hidden" id="phone2" name="phone-full" value="">
                         <input type="hidden" name='lang' value='en'>
                         <button  type="submit" id="submit" type="submit" class="country_verify">Signup</button>
                         <p class="terms">T&C* : First come first serve basis</p>
                      </div>
                   </form>
-                   </div>
+                    </div>
                      <div id="result" style="display: none">
                 <div class="newsletter">
                 <div class="newsletter_body">
@@ -208,8 +214,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             </div>
          </div>
       </div>
-
-     <div id="live-chat">
+      <div id="live-chat">
          <div class="clearfix chat-header" data-toggle="modal" data-target="#onload">
             <h4>Pre-Register Today to Receive Early Access</h4>
          </div>
@@ -225,13 +230,12 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             <!--[if lte IE 8]>
             <div id="ie-container">
                <div id="ie-cont-close">
-                  <a href='#' onclick='javascript&#058;this.parentNode.parentNode.style.display="none"; return false;'><img src='images/ie-war$
+                  <a href='#' onclick='javascript&#058;this.parentNode.parentNode.style.display="none"; return false;'><img src='images/ie-warn/ie-warning-close.jpg' style='border: none;' alt='Close'></a>
                </div>
                <div id="ie-cont-content" >
                   <div id="ie-cont-warning">
                      <img src='images/ie-warn/ie-warning.jpg' alt='Warning!'>
                   </div>
-
                   <div id="ie-cont-text" >
                      <div id="ie-text-bold">
                         You are using an outdated browser
@@ -241,15 +245,14 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      </div>
                   </div>
                   <div id="ie-cont-brows" >
-                     <a href='http://www.firefox.com' target='_blank'><img src='images/ie-warn/ie-warning-firefox.jpg' alt='Download Firefox'>$
-                     <a href='http://www.opera.com/download/' target='_blank'><img src='images/ie-warn/ie-warning-opera.jpg' alt='Download Ope$
-                     <a href='http://www.apple.com/safari/download/' target='_blank'><img src='images/ie-warn/ie-warning-safari.jpg' alt='Down$
-                     <a href='http://www.google.com/chrome' target='_blank'><img src='images/ie-warn/ie-warning-chrome.jpg' alt='Download Goog$
+                     <a href='http://www.firefox.com' target='_blank'><img src='images/ie-warn/ie-warning-firefox.jpg' alt='Download Firefox'></a>
+                     <a href='http://www.opera.com/download/' target='_blank'><img src='images/ie-warn/ie-warning-opera.jpg' alt='Download Opera'></a>
+                     <a href='http://www.apple.com/safari/download/' target='_blank'><img src='images/ie-warn/ie-warning-safari.jpg' alt='Download Safari'></a>
+                     <a href='http://www.google.com/chrome' target='_blank'><img src='images/ie-warn/ie-warning-chrome.jpg' alt='Download Google Chrome'></a>
                   </div>
                </div>
             </div>
             <![endif]-->
-
             <!-- HEADER 1 FONT WHITE TRANSPARENT -->
             <div class="header-black-bg"></div>
             <!--  <a class="get-app sticky--bottom invisible" target="_blank" href="#" >App Coming Soon...</a> -->
@@ -770,6 +773,12 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
    }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.12/js/utils.js" />
+<script>
+(function(h,e,a,t,m,p) {
+m=e.createElement(a);m.async=!0;m.src=t;
+p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+})(window,document,'script','https://u.heatmap.it/log.js');
+</script>
    </body>
 </html>
 
