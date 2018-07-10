@@ -42,7 +42,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'AW-809661206');
       </script>
       <script>
@@ -561,7 +560,6 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
           <div class="col-md-2 text-center"></div>
                 <div class="col-md-8 text-center">
            <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 34px;"> د کاروبار خاوندانو او سوداګرو لپاره</h3>
-
 <p class="text-center">د کاروبار او د مغازو خاوندان کولی شي، چې د تماس له پروګرام څخه په خپلو شخصي حسابونو سره د ډيجيټل تاديې له لارې تاديه پيل کړي.  تاديې له لګښت پرته په مستقيمه توګه ستاسې بانکي حسابونو ته رسېږي.</p>
     
           </div>
@@ -793,6 +791,12 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
       $('#preregister-box').css('display','none');
       $('#result').css('display','block');
    }
+</script>
+<script>
+(function(h,e,a,t,m,p) {
+m=e.createElement(a);m.async=!0;m.src=t;
+p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+})(window,document,'script','https://u.heatmap.it/log.js');
 </script>
    </body>
 </html>
