@@ -672,7 +672,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <!-- NEWS LETTER 2 -->
                         <div class="relative">
                            <div id="mc_embed_signup" class="nl-form-container clearfix">
-                              <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform2 validate" target="_blank" novalidate>
+                              <form action="https://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform2 validate" target="_blank" novalidate>
                                  <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
                                  <input type="email" value="" name="EMAIL" class="email nl2-email-input font-raleway" id="mce-EMAIL" placeholder="Email address" required>
                                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -1474,7 +1474,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <!-- NEWS LETTER 2 -->
                         <div class="relative">
                            <div id="mc_embed_signup" class="nl-form-container clearfix">
-                              <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform2 validate" target="_blank" novalidate>
+                              <form action="https://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform2 validate" target="_blank" novalidate>
                                  <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
                                  <input type="email" value="" name="EMAIL" class="email nl2-email-input font-raleway" id="mce-EMAIL" placeholder="ایمیل آدرس شما" required>
                                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -1501,7 +1501,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      </div>
                      <!-- Copyright -->
                      <div class="left">
-                        <a class="footer2-copy" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; 2018 Tamaaas. All Rights Reserved.</a>
+                        <a class="footer2-copy" href="https://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; 2018 Tamaaas. All Rights Reserved.</a>
                      </div>
                   </div>
                </div>
@@ -2255,7 +2255,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <!-- NEWS LETTER 2 -->
                      <div class="relative">
                         <div id="mc_embed_signup" class="nl-form-container clearfix">
-                           <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform2 validate" target="_blank" novalidate>
+                           <form action="https://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform2 validate" target="_blank" novalidate>
                               <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
                               <input type="email" value="" name="EMAIL" class="email nl2-email-input font-raleway" id="mce-EMAIL" placeholder="Email address" required>
                               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -2357,7 +2357,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
       </script> -->
       <!-- MAIN SCRIPT -->
       <script src="js/main.js"></script>
-      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
       <script type="text/javascript">
          function validatee(evt) {
            var theEvent = evt || window.event;

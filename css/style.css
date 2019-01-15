@@ -3107,7 +3107,7 @@ select.input-border {
     background-color: #f5f5f5;
 }
 .bg-gray {
-    background:url(../images/terms_service.jpg);
+    /*background:url(../images/terms_service.jpg);*/
 	background-size: cover;
 }
 .bg-gray_2 {

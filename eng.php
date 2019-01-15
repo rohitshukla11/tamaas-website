@@ -773,6 +773,12 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
    }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.12/js/utils.js" />
+<script>
+(function(h,e,a,t,m,p) {
+m=e.createElement(a);m.async=!0;m.src=t;
+p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+})(window,document,'script','https://u.heatmap.it/log.js');
+</script>
    </body>
 </html>
 

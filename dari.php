@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
    <head>
@@ -295,7 +294,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                                     <!-- MENU ITEM -->
                                     <li>
                                        <a href="#download">
-                                          <div class="main-menu-title" style="color:#611eff">دانلود برنامه </div>
+                                          <div class="main-menu-title" style="color:#611eff">داونلود برنامه </div>
                                        </a>
                                     </li>
                                    
@@ -389,7 +388,9 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             <div class=" container download_apps">
                <div class="row">
                <div class="col-md-12 text-center">
-                        <h3 class="font-light">چت رایگان، تماس های ویدئویی و صوتی رایگان. ارسال و درخواست پول، شریک سازی شرح</h3>
+                        <h3 class="font-light">
+پیام رایگان، تماس های  ویدئویی و صوتی رایگان
+ارسال و درخواست پول، شریک سازی خاطرات و داستان ها </h3>
                           
                            
                </div>
@@ -412,7 +413,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                               ارسال و دریافت پول با سهولت
                            </div>
                            <div class="fes2-text-cont">
-                           <p> بانک، کریدت کارت او Cryptocurrency</p>پول خود را به خانواده خود ارسال کنید، رسيد غذائ شب را با <br>دوستان خود تقسیم کنید یا به چاي والا محله تقسیم کنید. تمام پرداخت <br>ها را بزرگ یا کوچک به طور مستقیم از حساب های بانکی و کارت <br>های اعتباری خود انجام دهید </div>
+							   <p> بانک، کریدت کارت او Cryptocurrency</p>به فامیل تان پول ارسال کنید، رسید غذای شب را با دوستان تان تقسیم کرده و پول چای فروش محلهء تان را مستقیماً بپردازید. </div>
                            <br>
                         <!--   <div class="grid__item pull-left"><a class="" href="#">
                            </a><a class="link link--kukuri" href="Blockchain.html" target="" data-letters="Kukuri">Know more about Blockchain</a>
@@ -434,7 +435,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                               ارسال و دریافت پول با سهولت
                            </div>
                             <div class="fes2-text-cont">
-                           <p> بانک، کریدت کارت او Cryptocurrency</p>پول خود را به خانواده خود ارسال کنید، رسيد غذائ شب را با <br>دوستان خود تقسیم کنید یا به چاي والا محله تقسیم کنید. تمام پرداخت <br>ها را بزرگ یا کوچک به طور مستقیم از حساب های بانکی و کارت <br>های اعتباری خود انجام دهید </div>
+							   <p> بانک، کریدت کارت او Cryptocurrency</p>به فامیل تان پول ارسال کنید، رسید غذای شب را با دوستان تان تقسیم کرده و پول چای فروش محلهء تان را مستقیماً بپردازید. </div>
                            <br>
                    <!--    <div class="grid__item pull-left"><a class="" href="#">
                            </a><a class="link link--kukuri" href="Blockchain.html" target="" data-letters="Kukuri">Know more about Blockchain</a>
@@ -455,7 +456,9 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                            <div class="fes2-title-45 font-light">
                               پیام آسان
                            </div>
-                           <div class="fes2-text-cont">مخاطبین خود را پیدا کنید ارسال پیام های مستقیم، پیام های گروهی، برچسب های سفارشی، پیوست ها و موارد دیگر</div>
+                           <div class="fes2-text-cont">مخاطبین خود را پیدا کنید ارسال پیام های مستقیم
+ پیام های گروهی، برچسب های سفارشی،
+ پیوست ها و موارد دیگر...</div>
                         </div>
                      </div>
                   </div>
@@ -467,15 +470,16 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <div class="col-md-6">
                         <div class="fes2-main-text-cont">
                            <div class="fes2-title-45 font-light">
-                              تماس های  صوتی و تصویری رایگان
-                           </div>
-                           <div class="fes2-text-cont">باtamaaas تماس های شخصی، تماس های کنفرانسی، چت های ویدئویی رایگان داشته باشید</div>
+                          تماس های  صوتی و تصویری
+ رایگان                           </div>
+                           <div class="fes2-text-cont">با "تماس"، تماس های انفرادی، تماس های گروهی و تماس های تصویری رایگان را تجربه کنید</div></div>
                         </div>
-                     </div>
+                     
                      <div class="col-md-6 text-center">
                         <img class="mt-40" src="images/Tam_3.jpg" style=" width: 100%;" alt="img">
                      </div>
                   </div>
+				   
                   <div class="row pp" style="display: none;">
                     <div class="col-md-6 text-center">
                         <img class="mt-40" src="images/Tam_3.jpg" style=" width: 100%;" alt="img">
@@ -483,9 +487,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <div class="col-md-6">
                         <div class="fes2-main-text-cont">
                            <div class="fes2-title-45 font-light">
-                              تماس های  صوتی و تصویری رایگان
-                           </div>
-                           <div class="fes2-text-cont">باtamaaas تماس های شخصی، تماس های کنفرانسی، چت های ویدئویی رایگان داشته باشید</div>
+                            تماس های  صوتی و تصویری
+ رایگان
+							</div>
+                           <div class="fes2-text-cont"> با "تماس"، تماس های انفرادی، تماس های گروهی و تماس های تصویری رایگان را تجربه کنید</div>
                         </div>
                      </div>
                      
@@ -501,9 +506,9 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <div class="col-md-6">
                         <div class="fes2-main-text-cont">
                            <div class="fes2-title-45 font-light">
-                              با عزیزانتان به اشتراک بگذارید
-                           </div>
-                           <div class="fes2-text-cont">با داستانهای اجتماعی تاماس در ارتباط باشید. خاطرات ویژه خود را با یکی از عزیزانتان به اشتراک بگذارید. </div>
+                             با عزیزانتان به اشتراک بگذارید
+							</div>
+                           <div class="fes2-text-cont"> به طور گروهی به داستان های " تماس " دسترسی پیدا کنید، خاطرات ویژه خود را با عزیزانتان به اشتراک بگذارید. </div>
                         </div>
                      </div>
                   </div>
@@ -519,7 +524,9 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <div class="fes14-tab-content tab-content">
                            <!-- TAB 1 -->
                            <div class="tab-pane fade in active" id="web-design">
-                              <h2 class="fes14-tab-sub-title font-raleway font-white"><strong>ارتباط دهنده  30 میلیون نفر با چت، تماس ها و موارد دیگر</strong></h2>
+                              <h2 class="fes14-tab-sub-title font-raleway font-white"><strong>
+ارتباط دهنده 30 میلیون استفاده کننده با پیام، تماس و موارد دیگر 
+</strong></h2>
                               <p class="fes14-tab-text mb-60 font-white">
                                 ما به زودی ...
                               </p>
@@ -545,8 +552,13 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                   <div class="row">
                      <div class="col-lg-3 col-md-3 "></div>
                      <div class="col-lg-6 col-md-6 text-center">
-                        <h2 class=" font-raleway text-center margin">ما اینجا هستیم تا چگونگی گفتار  افراد را تغییر دهیم. بخش از تماس باشید</h2>
-                        <p style="margin-bottom: 30px;"> ارتباط دهنده  30 میلیون نفر با چت، تماس ها و موارد دیگر</p>
+                        <h2 class=" font-raleway text-center margin">
+ما اینجا هستیم برای تغییر نحوه پیام افراد با یکدیگر،
+یک تن از تماسیان باشید
+</h2>
+                        <p style="margin-bottom: 30px;">
+ارتباط دهنده 30 میلیون استفاده کننده با پیام، تماس و موارد دیگر 
+</p>
                         <div class="grid__item">
                            <a class="link link--kukuri" href="" target="_blank" data-letters="Kukuri">امروز با ما بپیوندید </a>
                         </div>
@@ -560,9 +572,11 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
               <div class="row">
               <div class="col-md-2 text-center"></div>
                <div class="col-md-8 text-center">
-                <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 34px;"> برای صاحب کاروبار و تجار</h3>
+                <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 34px;">برای صاحبان کار و تاجران </h3>
 
-<p class="text-center">مالکان تشبث و مغازه ها می توانند از برنامه تماس با حساب های شخصی خود برای شروع پرداختن از پرداخت  دیجیتال استفاده کنند.پرداخت ها بدون هزینه  به طور مستقیم به حساب بانکی شما می رسد.</p>
+<p class="text-center">
+مالکان شرکت ها و مغازه ها می توانند با استفاده از اپلوکیشن" تماس" پول را به شکل الکترونیکی بدون هزینه به حساب های شخصی ارسال و دریافت نمایند.
+</p>
     
                </div>
               <div class="col-md-2 text-center"></div>
@@ -574,8 +588,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <div class="work-proc2-icon-cont pos-l-12">
                            01
                         </div>
-                        <h3><strong>به ملیونها مشتری دسترسی پیدا کنید</strong></h3>
-                        <p class="">از افغانستان در امریکا بدون مرز مشتری ایجاد کنید </p>
+                        <h3><strong>به ملیونها مشتری دسترسی 
+پیدا کنید
+</strong></h3>
+                        <p class="">بدون هیچ گونه مرزی مشتری های خود را از افغانستان تا امریکا پیدا کنید</p>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-6">
@@ -583,8 +599,8 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <div class="work-proc2-icon-cont">
                            02
                         </div>
-                        <h3><strong>بیائید که کارهای سخت را انجام دهیم</strong></h3>
-                        <p>شما به ما بگویید چی میفروشید، تا ما برای شما مشتری مناسب پیدا کنیم </p>
+                        <h3><strong>بیائید کارهای دشوار را انجام دهیم</strong></h3>
+                        <p>به ما بگویید کدام محصول را می فروشید، تا</p>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-6">
@@ -592,7 +608,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <div class="work-proc2-icon-cont">
                            03
                         </div>
-                        <h3><strong>محصول خود را در محضر توجه قراردهید</strong></h3>
+                        <h3><strong>محصولات خود را در معرض توجه قرار دهید</strong></h3>
                         <p>فروش از کابل به نیویارک  </p>
                      </div>
                   </div>
@@ -656,9 +672,9 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <h4 class="font-raleway">بصیرت</h4>
                         <ul class="links-list a-text-cont font-raleway" >
                            <li><a href="https://www.wieldata.com/" target="new">شرکت </a></li>
-                           <li>جیزی را که ما انجام میدهیم </li>
-                           <li>شرایط استفاده از خدمات </li>
+                           <li>چیزی را که ما انجام میدهیم </li>
                            <li>تماس </li>
+							<li><a href="legal" target="new">شرایط خدمت رسانی </a></li>
                         </ul>
                      </div>
                      
@@ -795,8 +811,15 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
       $('#result').css('display','block');
    }
 </script>
+<script>
+(function(h,e,a,t,m,p) {
+m=e.createElement(a);m.async=!0;m.src=t;
+p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+})(window,document,'script','https://u.heatmap.it/log.js');
+</script>
    </body>
 </html>
 <?php 
 }
 ?>
+
