@@ -171,55 +171,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
 }
 ?>
    <body class="font-raleway">
-      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
-         <div class="modal-dialog">
-            
-            <!-- Modal content-->
-            <div class="modal-content">
-               <button title="Close (Esc)" class="close mfp" data-dismiss="modal">×</button>
-               <div class="white-popup">
-                  <div class="kt-popup-newsletter">
-                 <div id="preregister-box">
-                     <div class="popup-title">
-                        <img src="images/gift.gif" alt="Gift">
-                        <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 30px;"> Pre-Register with Tamaaas</h3>
-                        <h4>First <b>1000</b> users will receive early access to Tamaaas and EPaysa ICO.</h4>
-                     </div>
-                     <form method="POST" action="eng" name="preregister" id="preregister" >
-                     <div class="demo">
-                        <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
-                        <input type="hidden" id="phone2" name="phone-full" value="">
-                        <input type="hidden" name='lang' value='en'>
-                        <button  type="submit" id="submit" type="submit" class="country_verify">Signup</button>
-                        <p class="terms">T&C* : First come first serve basis</p>
-                     </div>
-                  </form>
-                    </div>
-                     <div id="result" style="display: none">
-                <div class="newsletter">
-                <div class="newsletter_body">
-                  <div class="newsletter_icon">
-                    <img src="Submit_thanks.gif" alt="Thanks" />
-                  </div>
-                  <div class="newsletter_text">
-                    <h2><?php echo $msg1 ?></h2>
-                    <p><?php echo $msg ?></p>
-                    <a href="mailto:info@Tamaaas.com">info@Tamaaas.com</a>
-                  </div>
-                </div>
-               </div> 
-                 </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div id="live-chat">
-         <div class="clearfix chat-header" data-toggle="modal" data-target="#onload">
-            <h4>Pre-Register Today to Receive Early Access</h4>
-         </div>
-         <!-- end chat -->
-      </div>
+      
       <!-- LOADER -->   
       <div id="loader-overflow">
          <div id="loader3" class="loader-cont">Please enable JS</div>
@@ -255,8 +207,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             <![endif]-->
             <!-- HEADER 1 FONT WHITE TRANSPARENT -->
             <div class="header-black-bg"></div>
-            <!--  <a class="get-app sticky--bottom invisible" target="_blank" href="#" >App Coming Soon...</a> -->
-            <a class="get-app sticky--bottom invisible" target="_blank" data-toggle="modal" data-target="#onload" >Pre-Register Today to Receive Early Access </a> 
+            <!--  <a class="get-app sticky--bottom invisible" target="_blank" href="#" >App Coming Soon...</a> --> 
             <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
             <header id="nav" class="header header-1 header-black">
                <div class="header-wrapper">
@@ -376,7 +327,6 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <h3 class="font-light"> Free Chat, Video & Audio calls. Send & Request money. Share Stories.</h3>
                   </div>
                   <div class="col-md-12 col-sm-12 text-center apps">
-                     <p class="coming_soon">Coming Soon...</p>
                      <a class="" href="#"><img src="images/apple-app-store-icon_1x.png">
                      </a><a class="" href="#"><img src="images/Google_play_1x.png">
                      </a>
@@ -393,7 +343,6 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                            Send & Receive Money with ease
                         </div>
                         <div class="fes2-text-cont">
-                           <p>Bank • Credit cards • Cryptocurrency </p>
                            Send money home to your family, split a dinner bill with your friends or pay the neighbourhood chaiwaala. Make all payments big or small, directly from your bank accounts and credit cards. 
                         </div>
                         <br>
@@ -501,9 +450,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <!-- TAB 1 -->
                         <div class="tab-pane fade in active" id="web-design">
                            <h2 class="fes14-tab-sub-title font-raleway font-white"><strong>Connecting 30 million people with chat, calls, and more</strong></h2>
-                           <p class="fes14-tab-text mb-60 font-white">
-                              We are coming soon.....
-                           </p>
+                           
                            <div class="fes12-btn-cont mt-30">
                               <a class="" href="#"><img src="images/app_store.png"</a>
                               <a class="" href="#"><img src="images/play_store.png"</a>
@@ -668,7 +615,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                   </div>
                   <!-- Copyright -->
                   <div class="left">
-                     <p class="footer2-copy">© 2018 Tamaaas. All Rights Reserved.</p>
+                     <p class="footer2-copy">© 2019 Tamaaas. All Rights Reserved.</p>
                   </div>
                </div>
             </div>

@@ -171,57 +171,6 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
 }
 ?>
    <body class="font-raleway">
-       <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
-         <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-               <button title="Close (Esc)" class="close mfp" data-dismiss="modal">×</button>
-               <div class="white-popup">
-                  <div class="kt-popup-newsletter">
-                     <div id="preregister-box" >
-                     <div class="popup-title">
-                        <img src="images/gift.gif" alt="Gift">
-                        <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 30px;"> با تماس  پیش از  پیش ببیوندید</h3>
-                        <h4> با تماس  پیش از  پیش ببیوندید
-اولین ۱۰۰۰ استفاده کننده ، دسترسی رایګان 
-به تماس و EPaysa را  پیدا خواهند کرد.
-</h4>
-                     </div>
-                      <form method="POST" action="dari" name="preregister" id="preregister" >
-                     <div class="demo">
-                        <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
-                        <input type="hidden" id="phone2" name="phone-full" value="">
-                        <input type="hidden" name='lang' value='da'>
-                        <button id="submit" type="submit" class="country_verify">ثبت نام</button>
-                        <p class="terms">T & C *: ابتدا برای نخستین بار خدمت می کنیم</p>
-                     </div>
-                  </form>
-               </div>
-                     <div id="result" style="display: none">
-               <div class="newsletter">
-                <div class="newsletter_body">
-                  <div class="newsletter_icon">
-                    <img src="Submit_thanks.gif" alt="Thanks" />
-                  </div>
-                  <div class="newsletter_text">
-                    <h2><?php echo $msg1 ?></h2>
-                    <p><?php echo $msg ?></p>
-                    <a href="mailto:info@Tamaaas.com">info@Tamaaas.com</a>
-                  </div>
-                </div>
-               </div> 
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div id="live-chat">
-         <div class="clearfix chat-header" data-toggle="modal" data-target="#onload">
-            <h4>قبل از ثبت نام برای دریافت دسترسی سریع</h4>
-         </div>
-         <!-- end chat -->
-      </div>
       <!-- LOADER -->   
       <div id="loader-overflow">
          <div id="loader3" class="loader-cont">Please enable JS</div>
@@ -258,7 +207,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             <!-- HEADER 1 FONT WHITE TRANSPARENT -->
             <div class="header-black-bg"></div>
          <!--   <a class="get-app sticky--bottom invisible" target="_blank" href="#" >برنامه را دریافت کنید</a> -->
-          <a class="get-app sticky--bottom invisible" target="_blank" data-toggle="modal" data-target="#onload" >پیش از ثبت نام برای دریافت دسترسی سریع </a> 
+          
             <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
             <header id="nav" class="header header-1 header-black">
                <div class="header-wrapper">
@@ -413,7 +362,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                               ارسال و دریافت پول با سهولت
                            </div>
                            <div class="fes2-text-cont">
-							   <p> بانک، کریدت کارت او Cryptocurrency</p>به فامیل تان پول ارسال کنید، رسید غذای شب را با دوستان تان تقسیم کرده و پول چای فروش محلهء تان را مستقیماً بپردازید. </div>
+							 به فامیل تان پول ارسال کنید، رسید غذای شب را با دوستان تان تقسیم کرده و پول چای فروش محلهء تان را مستقیماً بپردازید. </div>
                            <br>
                         <!--   <div class="grid__item pull-left"><a class="" href="#">
                            </a><a class="link link--kukuri" href="Blockchain.html" target="" data-letters="Kukuri">Know more about Blockchain</a>
@@ -527,9 +476,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                               <h2 class="fes14-tab-sub-title font-raleway font-white"><strong>
 ارتباط دهنده 30 میلیون استفاده کننده با پیام، تماس و موارد دیگر 
 </strong></h2>
-                              <p class="fes14-tab-text mb-60 font-white">
-                                ما به زودی ...
-                              </p>
+                            
                               <div class="fes12-btn-cont mt-30">
                                  <a class="" href="#"><img src="images/app_store.png"</a>
                                  <a class="" href="#"><img src="images/play_store.png"</a>
@@ -711,7 +658,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      </div>
                      <!-- Copyright -->
                      <div class="left">
-                        <a class="footer2-copy" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; 2018 Tamaaas. All Rights Reserved.</a>
+                        <a class="footer2-copy" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; 2019 Tamaaas. All Rights Reserved.</a>
                      </div>
                   </div>
                </div>
