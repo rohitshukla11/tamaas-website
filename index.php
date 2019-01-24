@@ -1771,10 +1771,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             </div>
          </div>
       </div>
-      <div id="live-chat">
+     <!--  <div id="live-chat">
          <div class="clearfix chat-header" data-toggle="modal" data-target="#onload">
             <h4>Pre-Register Today to Receive Early Access</h4>
-         </div>
+         </div> -->
          <!-- end chat -->
       </div>
       <!-- LOADER -->   
@@ -1949,7 +1949,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                            Send & Receive Money with ease
                         </div>
                         <div class="fes2-text-cont">
-                           <p>Bank • Credit cards • Cryptocurrency </p>
+                           <!-- <p>Bank • Credit cards • Cryptocurrency </p> -->
                            Send money home to your family, split a dinner bill with your friends or pay the neighbourhood chaiwaala. Make all payments big or small, directly from your bank accounts and credit cards. 
                         </div>
                         <br>
@@ -2057,9 +2057,9 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                         <!-- TAB 1 -->
                         <div class="tab-pane fade in active" id="web-design">
                            <h2 class="fes14-tab-sub-title font-raleway font-white"><strong>Connecting 30 million people with chat, calls, and more</strong></h2>
-                           <p class="fes14-tab-text mb-60 font-white">
+                           <!-- <p class="fes14-tab-text mb-60 font-white">
                               We are coming soon.....
-                           </p>
+                           </p> -->
                            <div class="fes12-btn-cont mt-30">
                               <a class="" href="#"><img src="images/app_store.png"</a>
                               <a class="" href="#"><img src="images/play_store.png"</a>
@@ -2288,10 +2288,10 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             });
             return vars;
             }          
-            if(!first)      
-             {
-               $('#onload').modal('show');
-            }
+            // if(!first)      
+            //  {
+            //    $('#onload').modal('show');
+            // }
              });
          
          //END document.ready 
