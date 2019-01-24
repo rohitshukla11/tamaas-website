@@ -658,7 +658,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      </div>
                      <!-- Copyright -->
                      <div class="left">
-                        <a class="footer2-copy" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; 2019 Tamaaas. All Rights Reserved.</a>
+                        <a class="footer2-copy" href="" target="_blank">&copy; 2019 Tamaaas. All Rights Reserved.</a>
                      </div>
                   </div>
                </div>

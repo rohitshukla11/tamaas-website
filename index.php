@@ -386,8 +386,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                            <div class="fes2-title-45 font-light">
                              په اسانۍ سره د پيسو لېږل  او  ترلاسه کول
                            </div>
-                           <div class="fes2-text-cont"> <p>"بانک، کریدیت کارت او Cryptocurrency
-" </p>خپل کور ته پیسې ولېږئ، ستاسو د ملګري سره د ډوډۍ ډوډۍ <br>وویشئ یا ګاونډي چاي واله ورکړئ. ټولې پیسې د لویې لویې او <br>وړې وړې پيسې د خپل بانکي حسابونو او کریډیټ کارډونو څخه<br>جوړ کړئ</div>
+                           <div class="fes2-text-cont"> خپل کور ته پیسې ولېږئ، ستاسو د ملګري سره د ډوډۍ ډوډۍ <br>وویشئ یا ګاونډي چاي واله ورکړئ. ټولې پیسې د لویې لویې او <br>وړې وړې پيسې د خپل بانکي حسابونو او کریډیټ کارډونو څخه<br>جوړ کړئ</div>
                         </div>
                    <!--    <div class="grid__item pull-left"><a class="" href="#">
                            </a><a class="link link--kukuri" href="Blockchain.html" target="" data-letters="Kukuri">Know more about Blockchain</a>
@@ -2225,7 +2224,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                   </div>
                   <!-- Copyright -->
                   <div class="left">
-                     <p class="footer2-copy">© 2019 Tamaaas. All Rights Reserved.</p>
+                     <p class="footer2-copy">&copy; 2019 Tamaaas. All Rights Reserved.</p>
                   </div>
                </div>
             </div>

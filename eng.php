@@ -365,7 +365,6 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                            Send & Receive Money with ease
                         </div>
                         <div class="fes2-text-cont">
-                           <p>Bank • Credit cards • Cryptocurrency </p>
                            Send money home to your family, split a dinner bill with your friends or pay the neighbourhood chaiwaala. Make all payments big or small, directly from your bank accounts and credit cards. 
                         </div>
                      </div>
@@ -615,7 +614,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                   </div>
                   <!-- Copyright -->
                   <div class="left">
-                     <p class="footer2-copy">© 2019 Tamaaas. All Rights Reserved.</p>
+                     <p class="footer2-copy">&copy; 2019 Tamaaas. All Rights Reserved.</p>
                   </div>
                </div>
             </div>

@@ -170,50 +170,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
 }
 ?>
 <body class="font-raleway">
-     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"  id="onload">
-         <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-               <button title="Close (Esc)" class="close mfp" data-dismiss="modal">×</button>
-               <div class="white-popup">
-                  <div class="kt-popup-newsletter">
-                    <div id="preregister-box" >
-                     <div class="popup-title">
-                        <img src="images/gift.gif" alt="Gift">
-                        <h3 style="color: #4878ef; font-family: 'Raleway'; font-size: 30px;"> لومری نوم لیکنه له تماس سره</h3>
-                        <h4> له تماس سره لومړۍ نوم لیکنه
-لومړني 1000 کاروونکي به تماس او  Epaysa ICO ته وړیا لاسرسی ومومي.
-</h4>
-                     </div>
-                     <div class="demo">
-                      <form method="POST" action="phasto" name="preregister" id="preregister" >
-                        <input type="tel" id="phone" name="pre_phone" class="form-control" required pattern=".{4,13}" onkeypress='validatee(event)' oninvalid="this.setCustomValidity('Enter Correct Phone Number ')"/>
-                        <input type="hidden" id="phone2" name="phone-full" value="">
-                        <input type="hidden" name='lang' value='pa'>
-                        <button id="submit" type="submit" class="country_verify">ګډون کول</button>
-                        <p class="terms"> T & C *: لومړی د لومړي ځل لپاره خدمت کوي </p>
-                     </div>
-                   </form>
-                 </div>
-                     <div id="result" style="display: none">
-                       <div class="newsletter">
-                        <div class="newsletter_body">
-                          <div class="newsletter_icon">
-                            <img src="Submit_thanks.gif" alt="Thanks" />
-                          </div>
-                          <div class="newsletter_text">
-                            <h2><?php echo $msg1 ?></h2>
-                            <p><?php echo $msg ?></p>
-                            <a href="mailto:info@Tamaaas.com">info@Tamaaas.com</a>
-                          </div>
-                        </div>
-                      </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+     
       <div id="live-chat">
          <div class="clearfix chat-header" data-toggle="modal" data-target="#onload">
             <h4>نن ورځ مخکې لاسلیک ترلاسه کولو لپاره راجستر کړئ</h4>
@@ -255,8 +212,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             <![endif]-->
             <!-- HEADER 1 FONT WHITE TRANSPARENT -->
             <div class="header-black-bg"></div>
-          <!--  <a class="get-app sticky--bottom invisible" target="_blank" href="#" >پروګرام ترلاسه کړئ</a> -->
-        <a class="get-app sticky--bottom invisible" target="_blank" data-toggle="modal" data-target="#onload" >د وړیا لاس رسی ترلاسه کولو لپاره مخکې راجستر </a> 
+          <!--  <a class="get-app sticky--bottom invisible" target="_blank" href="#" >پروګرام ترلاسه کړئ</a> --> 
             <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
             <header id="nav" class="header header-1 header-black">
                <div class="header-wrapper">
@@ -410,8 +366,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                               په اسانۍ سره د پيسو لېږل  او  ترلاسه کول
                            </div>
                            <div class="fes2-text-cont">
-                           <p>"بانک، کریدیت کارت او Cryptocurrency
-" </p>خپل کور ته پیسې ولېږئ، ستاسو د ملګري سره د ډوډۍ ډوډۍ <br>وویشئ یا ګاونډي چاي واله ورکړئ. ټولې پیسې د لویې لویې او <br>وړې وړې پيسې د خپل بانکي حسابونو او کریډیټ کارډونو څخه<br>جوړ کړئ</div>
+                           <p> </p>خپل کور ته پیسې ولېږئ، ستاسو د ملګري سره د ډوډۍ ډوډۍ <br>وویشئ یا ګاونډي چاي واله ورکړئ. ټولې پیسې د لویې لویې او <br>وړې وړې پيسې د خپل بانکي حسابونو او کریډیټ کارډونو څخه<br>جوړ کړئ</div>
                            <br>
                         <!--   <div class="grid__item pull-left"><a class="" href="#">
                            </a><a class="link link--kukuri" href="Blockchain.html" target="" data-letters="Kukuri">Know more about Blockchain</a>
@@ -432,8 +387,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                            <div class="fes2-title-45 font-light">
                              په اسانۍ سره د پيسو لېږل  او  ترلاسه کول
                            </div>
-                           <div class="fes2-text-cont"> <p>"بانک، کریدیت کارت او Cryptocurrency
-" </p>خپل کور ته پیسې ولېږئ، ستاسو د ملګري سره د ډوډۍ ډوډۍ <br>وویشئ یا ګاونډي چاي واله ورکړئ. ټولې پیسې د لویې لویې او <br>وړې وړې پيسې د خپل بانکي حسابونو او کریډیټ کارډونو څخه<br>جوړ کړئ</div>
+                           <div class="fes2-text-cont">خپل کور ته پیسې ولېږئ، ستاسو د ملګري سره د ډوډۍ ډوډۍ <br>وویشئ یا ګاونډي چاي واله ورکړئ. ټولې پیسې د لویې لویې او <br>وړې وړې پيسې د خپل بانکي حسابونو او کریډیټ کارډونو څخه<br>جوړ کړئ</div>
                         </div>
                    <!--    <div class="grid__item pull-left"><a class="" href="#">
                            </a><a class="link link--kukuri" href="Blockchain.html" target="" data-letters="Kukuri">Know more about Blockchain</a>
@@ -693,7 +647,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      </div>
                      <!-- Copyright -->
                      <div class="left">
-                        <a class="footer2-copy" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" target="_blank">&copy; Tamaaas</a>
+                        <a class="footer2-copy" href="" target="_blank">&copy; 2019 Tamaaas. All Rights Reserved.</a>
                      </div>
                   </div>
                </div>
