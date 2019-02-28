@@ -327,8 +327,8 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <h3 class="font-light"> Free Chat, Video & Audio calls. Send & Request money. Share Stories.</h3>
                   </div>
                   <div class="col-md-12 col-sm-12 text-center apps">
-                     <a class="" href="https://itunes.apple.com/us/app/tamaaas-messenger/id1449952054?mt=8"><img src="images/apple-app-store-icon_1x.png">
-                     </a><a class="" href="#"><img src="images/Google_play_1x.png">
+                     <a class="" target="_blank" href="https://itunes.apple.com/us/app/tamaaas-messenger/id1449952054?mt=8"><img src="images/apple-app-store-icon_1x.png">
+                     </a><a class="" target="_blank" href="https://play.google.com/store/apps/details?id=com.tamaaas"><img src="images/Google_play_1x.png">
                      </a>
                   </div>
                </div>
