@@ -345,7 +345,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                </div>
                   <div class="col-md-12 col-sm-12 text-center apps">
                   
-                                 <a class="" href="#"><img src="images/apple-app-store-icon_1x.png">
+                                 <a class="" href="https://itunes.apple.com/us/app/tamaaas-messenger/id1449952054?mt=8"><img src="images/apple-app-store-icon_1x.png">
                                  </a><a class="" href="#"><img src="images/Google_play_1x.png">
                               </a></div>
                   </div>
@@ -478,8 +478,8 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
 </strong></h2>
                             
                               <div class="fes12-btn-cont mt-30">
-                                 <a class="" href="#"><img src="images/app_store.png"</a>
-                                 <a class="" href="#"><img src="images/play_store.png"</a>
+                                 <a class="" href="https://itunes.apple.com/us/app/tamaaas-messanger/id1449952054?mt=8"><img src="images/app_store.png"</a>
+                                 <a class="" href="https://play.google.com/store/apps/details?id=com.tamaaas"><img src="images/play_store.png"</a>
                               </div>
                            </div>
                         </div>

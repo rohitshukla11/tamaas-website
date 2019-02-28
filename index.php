@@ -348,7 +348,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
           </div>
                 <div class="col-md-12 col-sm-12 text-center apps">
                 
-                                 <a class="" href="#"><img src="images/apple-app-store-icon_1x.png">
+                                 <a class="" href="https://itunes.apple.com/us/app/tamaaas-messenger/id1449952054?mt=8"><img src="images/apple-app-store-icon_1x.png">
                                  </a><a class="" href="#"><img src="images/Google_play_1x.png">
                               </a></div>
                 </div>
@@ -473,8 +473,8 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                            <div class="tab-pane fade in active" id="web-design">
                               <h2 class="fes14-tab-sub-title font-raleway font-white"><strong>30 میلیونه وګړي له بنډار، ټلېفوني لیکو او نورو لارو نښلوي</strong></h2>
                               <div class="fes12-btn-cont mt-30">
-                                 <a class="" href="#"><img src="images/app_store.png"</a>
-                                 <a class="" href="#"><img src="images/play_store.png"</a>
+                                 <a class="" href="https://itunes.apple.com/us/app/tamaaas-messanger/id1449952054?mt=8"><img src="images/app_store.png"</a>
+                                 <a class="" href="https://play.google.com/store/apps/details?id=com.tamaaas"><img src="images/play_store.png"</a>
                               </div>
                            </div>
                         </div>
@@ -968,12 +968,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             </div>
          </div>
       </div>
-      <div id="live-chat">
-         <div class="clearfix chat-header" data-toggle="modal" data-target="#onload">
-            <h4>قبل از ثبت نام برای دریافت دسترسی سریع</h4>
-         </div>
-         <!-- end chat -->
-      </div>
+     
       <!-- LOADER -->   
       <div id="loader-overflow">
          <div id="loader3" class="loader-cont">Please enable JS</div>
@@ -1146,7 +1141,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                </div>
                   <div class="col-md-12 col-sm-12 text-center apps">
                   
-                                 <a class="" href="#"><img src="images/apple-app-store-icon_1x.png">
+                                 <a class="" href="https://itunes.apple.com/us/app/tamaaas-messenger/id1449952054?mt=8"><img src="images/apple-app-store-icon_1x.png">
                                  </a><a class="" href="#"><img src="images/Google_play_1x.png">
                               </a></div>
                   </div>
@@ -1812,8 +1807,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
             <![endif]-->
             <!-- HEADER 1 FONT WHITE TRANSPARENT -->
             <div class="header-black-bg"></div>
-            <!--  <a class="get-app sticky--bottom invisible" target="_blank" href="#" >App Coming Soon...</a> -->
-            <a class="get-app sticky--bottom invisible" target="_blank" data-toggle="modal" data-target="#onload" >Pre-Register Today to Receive Early Access </a> 
+            <!--  <a class="get-app sticky--bottom invisible" target="_blank" href="#" >App Coming Soon...</a> --> 
             <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
             <header id="nav" class="header header-1 header-black">
                <div class="header-wrapper">
@@ -1933,7 +1927,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                      <h3 class="font-light"> Free Chat, Video & Audio calls. Send & Request money. Share Stories.</h3>
                   </div>
                   <div class="col-md-12 col-sm-12 text-center apps">
-                     <a class="" href="#"><img src="images/apple-app-store-icon_1x.png">
+                     <a class="" href="https://itunes.apple.com/us/app/tamaaas-messenger/id1449952054?mt=8"><img src="images/apple-app-store-icon_1x.png">
                      </a><a class="" href="#"><img src="images/Google_play_1x.png">
                      </a>
                   </div>
@@ -2061,8 +2055,8 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                               We are coming soon.....
                            </p> -->
                            <div class="fes12-btn-cont mt-30">
-                              <a class="" href="#"><img src="images/app_store.png"</a>
-                              <a class="" href="#"><img src="images/play_store.png"</a>
+                              <a class="" href="https://itunes.apple.com/us/app/tamaaas-messanger/id1449952054?mt=8"><img src="images/app_store.png"</a>
+                              <a class="" href="https://play.google.com/store/apps/details?id=com.tamaaas"><img src="images/play_store.png"</a>
                            </div>
                         </div>
                      </div>
