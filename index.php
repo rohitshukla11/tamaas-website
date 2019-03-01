@@ -1158,7 +1158,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                               ارسال و دریافت پول با سهولت
                            </div>
                            <div class="fes2-text-cont">
-                           <p> بانک، کریدت کارت او Cryptocurrency</p>پول خود را به خانواده خود ارسال کنید، رسيد غذائ شب را با <br>دوستان خود تقسیم کنید یا به چاي والا محله تقسیم کنید. تمام پرداخت <br>ها را بزرگ یا کوچک به طور مستقیم از حساب های بانکی و کارت <br>های اعتباری خود انجام دهید </div>
+                           <!-- <p> بانک، کریدت کارت او Cryptocurrency</p> -->پول خود را به خانواده خود ارسال کنید، رسيد غذائ شب را با <br>دوستان خود تقسیم کنید یا به چاي والا محله تقسیم کنید. تمام پرداخت <br>ها را بزرگ یا کوچک به طور مستقیم از حساب های بانکی و کارت <br>های اعتباری خود انجام دهید </div>
                            <br>
                         <!--   <div class="grid__item pull-left"><a class="" href="#">
                            </a><a class="link link--kukuri" href="Blockchain.html" target="" data-letters="Kukuri">Know more about Blockchain</a>
@@ -1180,7 +1180,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                               ارسال و دریافت پول با سهولت
                            </div>
                             <div class="fes2-text-cont">
-                           <p> بانک، کریدت کارت او Cryptocurrency</p>پول خود را به خانواده خود ارسال کنید، رسيد غذائ شب را با <br>دوستان خود تقسیم کنید یا به چاي والا محله تقسیم کنید. تمام پرداخت <br>ها را بزرگ یا کوچک به طور مستقیم از حساب های بانکی و کارت <br>های اعتباری خود انجام دهید </div>
+                           <!-- <p> بانک، کریدت کارت او Cryptocurrency</p> -->پول خود را به خانواده خود ارسال کنید، رسيد غذائ شب را با <br>دوستان خود تقسیم کنید یا به چاي والا محله تقسیم کنید. تمام پرداخت <br>ها را بزرگ یا کوچک به طور مستقیم از حساب های بانکی و کارت <br>های اعتباری خود انجام دهید </div>
                            <br>
                    <!--    <div class="grid__item pull-left"><a class="" href="#">
                            </a><a class="link link--kukuri" href="Blockchain.html" target="" data-letters="Kukuri">Know more about Blockchain</a>
@@ -1966,7 +1966,7 @@ if(isset($oname) && isset($buisness_name) && isset($products) && isset($email) &
                            Send & Receive Money with ease
                         </div>
                         <div class="fes2-text-cont">
-                           <p>Bank • Credit cards • Cryptocurrency </p>
+                          <!--  <p>Bank • Credit cards • Cryptocurrency </p> -->
                            Send money home to your family, split a dinner bill with your friends or pay the neighbourhood chaiwaala. Make all payments big or small, directly from your bank accounts and credit cards. 
                         </div>
                      </div>
